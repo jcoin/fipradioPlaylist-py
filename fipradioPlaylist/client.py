@@ -186,7 +186,7 @@ class fipplaylistClient():
 
     def _format_data(self):
         """Format data return by FIP radio """
-        print(self._jsondata)
+
         try:
             now = (self._jsondata)['data']['now']
             self._next_refresh = now['next_refresh']
@@ -235,7 +235,7 @@ class fipplaylistClient():
                     track = nextTracks[i]
                 else:
                     track = nextTracks[i]['node']
-                print("Appending future tracks")
+
                 self._next_tracks.append({
                     'title': track['subtitle'],
                     'artist': track['title'],
