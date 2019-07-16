@@ -10,7 +10,7 @@ README = (HERE / "README.md").read_text()
 setup(name="fipradioPlaylist",
       version="0.1.0",
       author="jcoin",
-      author_email
+      author_email="jrlamoule@gmail.com",
       long_description=README,
       long_description_content_type="text/markdown",
       description="Library to access the previous, current and future tracks "
@@ -22,6 +22,6 @@ setup(name="fipradioPlaylist",
                    "Programming Language :: Python :: 3",
                    "Programming Language :: Python :: 3 :: Only"],
       install_requires=['requests'],
-      packages=["reader"],
-      py_modules=['fipradio-playlist'],
+      packages=["fipradioPlaylist"],
+      py_modules=['fipplaylistClient'],
       scripts=[])
